@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class RowColumnWidget extends StatefulWidget {
   const RowColumnWidget({Key? key}) : super(key: key);
@@ -71,6 +72,7 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
       ),
       onWillPop: () async {
         if (doubleClickToExit) {
+          MethodChannel("").invokeMethod("");
           return true;
         }
         doubleClickToExit = true;
