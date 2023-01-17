@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class RowColumnWidget extends StatefulWidget {
   const RowColumnWidget({Key? key}) : super(key: key);
@@ -6,14 +7,6 @@ class RowColumnWidget extends StatefulWidget {
   @override
   State<RowColumnWidget> createState() => _RowColumnWidgetState();
 }
-
-/// Column vertical
-// enter name
-// enter password
-//button
-
-///Row  horizontal
-// enter name     enter password       button
 
 class _RowColumnWidgetState extends State<RowColumnWidget> {
   bool doubleClickToExit = false;
@@ -71,7 +64,8 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
       ),
       onWillPop: () async {
         if (doubleClickToExit) {
-          return true;
+          MethodChannel("flutter_widget/taskToBack").invokeMethod("taskToBackground");
+          return false;
         }
         doubleClickToExit = true;
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Double click to exit")));
