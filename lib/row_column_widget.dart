@@ -64,7 +64,7 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
       ),
       onWillPop: () async {
         if (doubleClickToExit) {
-          MethodChannel("flutter_widget/taskToBack").invokeMethod("taskToBackground");
+          await MethodChannel("flutter_widget/taskToBack").invokeMethod("taskToBackground");
           return false;
         }
         doubleClickToExit = true;

@@ -15,7 +15,7 @@ class MainActivity : FlutterActivity() {
         ).setMethodCallHandler { call, result ->
             if (call.method == methodTaskToBackground) {
                 moveTaskToBack(true)
-                result.success(null)
+                result.success(null);
             }
         }
     }
