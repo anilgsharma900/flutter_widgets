@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/row_column_widget.dart';
+import 'package:flutter_widgets/statefull_widget_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: RowColumnWidget(),
+      home: StatefulDemoWidget(),
     );
   }
 }
