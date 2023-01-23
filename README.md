@@ -1,16 +1,35 @@
-# flutter_widgets
+# flutter widgets
 
-Will try differen different widgets and will create separate branch for each widget
+This repository have many branches for specific widgets. We explore different widgets and their
+functionality.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+##Clone repository
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Setup Flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. install IDE for development (AS | VSCode)
+2. Activate flutter stable channel
+    ```shell script
+        $ flutter stable channel
+   ``` 
+
+## Clone
+
+   ```shell script
+         $ clone https://github.com/anilgsharma900/flutter_widgets.git
+   ```
+
+Please give start, it is free :D
+
+
+
+
+   
+   
+
+
+
