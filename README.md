@@ -3,9 +3,9 @@
 This repository have many branches for specific widgets. We explore different widgets and their
 functionality.
 
-## Subscribe my channel for more
+## Youtube
 
-Youtube Channel [itsAnilg](https://www.youtube.com/@itsanilgg)
+### Subscribe youtube Channel [itsAnilg](https://www.youtube.com/@itsanilgg)
 
 ## Getting Started
 
