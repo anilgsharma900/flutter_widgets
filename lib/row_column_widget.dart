@@ -7,14 +7,6 @@ class RowColumnWidget extends StatefulWidget {
   State<RowColumnWidget> createState() => _RowColumnWidgetState();
 }
 
-/// Column vertical
-// enter name
-// enter password
-//button
-
-///Row  horizontal
-// enter name     enter password       button
-
 class _RowColumnWidgetState extends State<RowColumnWidget> {
   bool doubleClickToExit = false;
 
@@ -23,7 +15,7 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
     return WillPopScope(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Row And Column"),
+          title: const Text("Row And Column"),
         ),
         body: Container(
           color: Colors.blue,
@@ -32,25 +24,25 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("First Name 1"),
+              const Text("First Name 1"),
               const SizedBox(
                 height: 4.0,
               ),
-              Text("First Name 2"),
-              SizedBox(
-                height: 4.0,
-              ),
-              Text("First Name 3"),
+              const Text("First Name 2"),
               const SizedBox(
                 height: 4.0,
               ),
-              Text("First Name 4"),
-              Text("First Name 5"),
+              const Text("First Name 3"),
               const SizedBox(
                 height: 4.0,
               ),
-              Text("First Name 6"),
-              Text("First Name 7"),
+              const Text("First Name 4"),
+              const Text("First Name 5"),
+              const SizedBox(
+                height: 4.0,
+              ),
+              const Text("First Name 6"),
+              const Text("First Name 7"),
               const SizedBox(
                 height: 12.0,
               ),
@@ -59,7 +51,7 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
                 child: Row(
                   // mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
+                  children: const [
                     Text("First Name"),
                     Text("Last Name"),
                   ],
@@ -74,7 +66,8 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
           return true;
         }
         doubleClickToExit = true;
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Double click to exit")));
+        ScaffoldMessenger.of(context)
+            .showSnackBar(const SnackBar(content: Text("Double click to exit")));
 
         Future.delayed(const Duration(seconds: 2), () {
           doubleClickToExit = false;
