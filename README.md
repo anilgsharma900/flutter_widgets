@@ -5,7 +5,7 @@ functionality.
 
 ## Subscribe my channel for more
 
-[itsAnilg](https://www.youtube.com/@itsanilgg)
+Youtube Channel [itsAnilg](https://www.youtube.com/@itsanilgg)
 
 ## Getting Started
 
