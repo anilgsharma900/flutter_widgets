@@ -19,9 +19,9 @@ functionality.
 
 ## Clone
 
-   ````shell script
+   ```shell script
          $ clone https://github.com/anilgsharma900/flutter_widgets.git
-   ````
+   ```
 
 
 
